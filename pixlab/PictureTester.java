@@ -47,10 +47,10 @@ public class PictureTester
   /** Method to test FixUnderwater */
   public static void testFixUnderwater()
   {
-      Picture beach = new Picture ("beach.jpg");
-      beach.explore();
-      beach.Grayscale();
-      beach.explore();
+      Picture water = new Picture ("water.jpg");
+      water.explore();
+      water.FixUnderwater();
+      water.explore();
   }
   
   /** Method to test mirrorVertical */

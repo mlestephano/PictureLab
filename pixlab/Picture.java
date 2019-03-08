@@ -177,7 +177,12 @@ public class Picture extends SimplePicture
              int red = p.getRed();
              int blue = p.getBlue();
              int green = p.getGreen();
-             if (red
+             if (red<20 && blue>150&&blue<190 && green>150&&green<180)
+             {
+                 p.setRed(200);
+                 p.setBlue(100);
+                 p.setGreen(20);
+             }
           }  
       }
   }
