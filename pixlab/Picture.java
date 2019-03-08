@@ -154,7 +154,7 @@ public class Picture extends SimplePicture
       Pixel[][] image = this.getPixels2D();
       for (Pixel[] row : image)
       {
-          for (Pixel p:row)
+          for (Pixel p : row)
           {
               int red = p.getRed();
               int blue = p.getBlue();
@@ -164,6 +164,21 @@ public class Picture extends SimplePicture
               p.setBlue(average);
               p.setGreen(average);
           }
+      }
+  }
+  
+  public void FixUnderwater()
+  {
+      Pixel[][] image = this.getPixels2D();
+      for (Pixel[] row : image)
+      {
+          for (Pixel p : row)
+          {
+             int red = p.getRed();
+             int blue = p.getBlue();
+             int green = p.getGreen();
+             if (red
+          }  
       }
   }
     
