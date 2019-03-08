@@ -17,6 +17,7 @@ public class PictureTester
     beach.explore();
   }
   
+  /** Method to test keepOnlyBlue */
   public static void testKeepOnlyBlue()
   {
       Picture beach = new Picture("beach.jpg");
@@ -24,6 +25,15 @@ public class PictureTester
       beach.keepOnlyBlue();
       beach.explore();
   }
+  
+  /** Method to test Negate */
+  public static void testNegate()
+  {
+      Picture beach = new Picture ("beach.jpg");
+      beach.explore();
+      beach.Negate();
+      beach.explore();
+   }
   
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
