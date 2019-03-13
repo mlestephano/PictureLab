@@ -239,7 +239,7 @@ public class Picture extends SimplePicture
               leftPixel=pixels[row][col];
               rightPixel=pixels[col][row];
           }
-          img.setPixel(ong.setPixel());
+          leftPixel.setPixel(rightPixel.setPixel());
       }
   }
   
