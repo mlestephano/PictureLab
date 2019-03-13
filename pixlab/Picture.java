@@ -230,14 +230,14 @@ public class Picture extends SimplePicture
       Pixel[][] pixels = this.getPixels2D();
       Pixel leftPixel = null;
       Pixel rightPixel = null;
-      int end=Math.min(picture.length, picture[0].length);
+      int end=Math.min(pixels.length, pixels[0].length);
       int width = pixels[0].length;
       for (int row=0; row<pixels.length; row++)
       {
-          for (int col=0; ; col++)
+          for (int col=0; col<pixels[0].length ; col++)
           {
-              ong=pixel[i][j];
-              img=pixel[j][i];
+              leftPixel=pixels[row][col];
+              rightPixel=pixels[col][row];
           }
           img.setPixel(ong.setPixel());
       }
