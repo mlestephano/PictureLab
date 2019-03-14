@@ -53,6 +53,16 @@ public class PictureTester
       water.explore();
   }
   
+  public static void testCopy()
+  {
+      Picture ocean = new Picture ("beach.jpg");
+      //Picture daddy = new Picture ("flower1.jpg");
+      Picture daddy2 = new Picture ("snowman.jpg");
+      //ocean.copy(daddy, 100, 200);
+      ocean.copy(daddy2, 10, 10, 60, 160, 100, 230);
+      ocean.explore();
+  }
+  
   /** Method to test mirrorVerticalLefttoRight */
   public static void testMirrorVerticalLefttoRight()
   {
